@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fefefe;
+            background:  #4a4a4a;
+        }
+
+        h1,
+        h2 {
+            width: 100%;
+            text-align: center; 
+            font-size: 2.5rem;
+            margin: 0.5rem 0 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        form {
+            width: 50%;
+            margin: 1rem auto 0 ;
+            padding: 1rem;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.18);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        section {
+            padding: 1rem;
+            margin-block: 0.5rem;
+            border-radius: 1rem;
+            border-color: transparent;
+            display: flex;
+            gap: 1rem;
+        }
+
+        button[type='submit'] {
+            width: 100%;
+            border-radius: 1rem;
+            border: 2px solid gray;
+            padding: 16px;
+            background: gray;
+            color: white;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: all;
+        }
+
+        input, select {
+            border-radius: 16px;
+            border: none;
+            padding: 4px 8px ;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>Formulario de inscripción</h1>
+        <h2>Tecnológico Nacional de México</h2>
+        <section>
+            <label for="campus">Elige el campus</label>
+            <select name="campus" id="campus">
+                <option disabled selected>Selecciona</option>
+                <option value="oaxaca">Oaxaca</option>
+                <option value="puebla">Puebla</option>
+                <option value="morelos">Morelos</option>
+                <option value="edomex">Estado de México</option>
+                <option value="cordoba">Cordoba</option>
+            </select>
+
+            <label for="carrera">Elige la carrera</label>
+            <select name="carrera" id="carrera">
+                <option disabled selected>Selecciona</option>
+                <option value="sistemas">Ing en sistemas Computacionales</option>
+                <option value="gestion">Ing en Gestion empresarial</option>
+                <option value="industrial">Ing industrial</option>
+                <option value="mecanica">Ing mecanica</option>
+                <option value="quimica">Ing quimica</option>
+            </select>
+        </section>
+
+        <section>
+            <label for="turno">Elige el turno</label>
+            <select name="turno" id="turno">
+                <option disabled selected>Selecciona</option>
+                <option value="matutino">Matutino</option>
+                <option value="vespertino">Vespertino</option>
+            </select>
+        </section>
+
+        <h2>Datos personales</h2>
+        <section>
+            <label for="nombre">Nombre</label>
+            <input name="nombre" id="nombre" placeholder="Carlos Alberto">
+        </section>
+
+        <section>
+            <label for="apellidoP">Apellido paterno</label>
+            <input name="apellidoP" id="apellidoP" placeholder="Sosa">
+
+            <label for="apellidoM">Apellido materno</label>
+            <input name="apellidoM" id="apellidoM" placeholder="Perera">
+        </section>
+
+        <section>
+            <label for="genero">Genero</label>
+            <label>
+                <input name="genero" id="genero" type="radio" value="masculino">
+                Masculino
+            </label>
+            <label>
+                <input name="genero" id="genero" type="radio" value="femenino">
+                Femenino
+            </label>
+        </section>
+
+        <section>
+            <label for="nacimiento">Fecha de nacimiento</label>
+
+            <div class="flex">
+                <select name="dia" id="dia">
+                    <option disabled selected>Dia</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select name="mes" id="mes">
+                    <option disabled selected>Mes</option>
+                    <option value="Enero">Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Mayo">Mayo</option>
+                    <option value="Junio">Junio</option>
+                    <option value="Julio">Julio</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Septiembre">Septiembre</option>
+                    <option value="Octubre">Octubre</option>
+                    <option value="Noviembre">Noviembre</option>
+                    <option value="Diciembre">Diciembre</option>
+                </select>
+                <select name="año" id="año">
+                    <option disabled selected>Año</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                </select>
+            </div>
+        </section>
+
+        <section>
+            <label for="prepa">Escuela de procedencia</label>
+            <select name="prepa" id="prepa">
+                <option disabled selected>Selecciona</option>
+                <option value="cobao01">Cobao 01</option>
+                <option value="cbtis123">Cbtis 123</option>
+                <option value="cbtis26">Cbtis 26</option>
+                <option value="prepa6">Prepa 6</option>
+                <option value="prepa1">Prepa 1</option>
+            </select>
+        </section>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+</body>
+
+</html>
